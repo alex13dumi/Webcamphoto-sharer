@@ -1,10 +1,15 @@
 # Webcamphoto-sharer
 
 Create an account on https://cloud.google.com/ .
+
 Select or create a new project. 
+
 Go top left to navigation menu and select APIs & Services -> Library -> Type 'photos' in the checkbox -> Enable . 
+
 After API is enabled, go to Credentials -> Configure consent screen.
+
 User Type: External -> Create. 
+
 On OAuth consent screen complete * text boxes.
 After, select upload scopes because we will only upload photos to our account, then add a test user to let. ( See, upload, and organize items in your Google Photos library  )
 Go to Credentials after completion and then click on + CREATE CREDENTIALS. Select OAuth client ID, because Google Photos API only works with OAuth client ID, not with an API Key.
