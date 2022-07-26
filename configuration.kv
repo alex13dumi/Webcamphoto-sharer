@@ -1,0 +1,38 @@
+<Camerascreen>:
+    GridLayout:
+        cols:1
+        Camera:
+            id: camera
+            play: False
+        Button:
+            id: camera_button
+            text: 'Start Camera'
+            size_hint_y:0.1
+            on_press: root.start() if root.ids.camera.play == False else root.stop()
+        Button:
+            text: 'Capture'
+            size_hint_y:0.1
+            on_press: root.capture()
+
+<ImageScreen>:
+    GridLayout:
+        cols: 1
+        Image:
+            id: img
+        Button:
+            text: 'Back'
+            on_press: root.back()
+            size_hint_y:0.1
+        Button:
+            id: text_link
+            text: 'Create sharable link'
+            on_press: root.create_sharable_link()
+            size_hint_y:0.1
+
+<RootWidget>:
+    CameraScreen:
+        id: camera_screen
+        name: 'camera_screen'
+    ImageScreen:
+        id: image_screen
+        name: 'image_screen'
